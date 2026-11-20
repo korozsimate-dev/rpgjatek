@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="hu">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>The Fallen Crown</title>
+  <body>
+    <header>
+      <div class="brand">
+        <i data-i="crown"></i><span>THE FALLEN CROWN</span>
+      </div>
+      <nav>
+        <button data-page="game" class="active">Játék</button
+        ><button data-page="quests">Napló</button
+        ><button data-page="bag">Leltár</button>
+      </nav>
+      <button id="save"><i data-i="save"></i> Mentés</button>
+    </header>
+    <main id="stage">
+      <div id="view"></div>
+      <div class="shade"></div>
+      <section class="location">
+        <small><b></b> I. FEJEZET</small>
+        <h1>Eldoria királysága</h1>
+        <p>⚜ &nbsp; Kastélyudvar</p>
+      </section>
+      <aside class="quest">
+        <small><i data-i="scroll-text"></i> FŐKÜLDETÉS</small>
+        <h2>Az elveszett korona</h2>
+        <div class="rule"></div>
+        <p><em>◇</em><span>Beszélj Alaric királlyal a kastélyban.</span></p>
+      </aside>
+      <div id="mapbox">
+        <div class="compass">N</div>
+        <canvas id="map" width="180" height="180"></canvas
+        ><label>ELDORIA</label>
+      </div>
+      <div class="hero">
+        <div class="avatar"><i data-i="shield"></i></div>
+        <div class="vitals">
+          <strong>Vándor lovag</strong>
+          <div><i class="hp"></i><span id="health"></span></div>
+          <div><i class="mp"></i><span id="mana"></span></div>
+        </div>
+      </div>
+      <button id="play">
+        <i data-i="swords"></i> Kaland indítása <span>›</span>
+      </button>
+      <div class="hotbar"></div>
+      <div id="touch">
+        <button data-key="KeyW">▲</button><button data-key="KeyA">◀</button
+        ><button data-key="KeyS">▼</button><button data-key="KeyD">▶</button>
+      </div>
+      <div id="prompt"></div>
+      <div id="toast"></div>
+    </main>
+    <footer>
+      <div class="live"><b></b> <span>VILÁG AKTÍV</span></div>
+      <div class="controls">
+        <kbd>W A S D</kbd> Mozgás <kbd>E</kbd> Interakció <kbd>I</kbd> Leltár
+        <kbd>J</kbd> Napló
+      </div>
+      <span class="version">THE FALLEN CROWN <em>/</em> RPG</span>
+    </footer>
+    <dialog><div id="modal"></div></dialog>
+    <script type="module" src="/src/game.js"></script>
+  </body>
+</html>
